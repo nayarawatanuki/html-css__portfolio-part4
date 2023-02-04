@@ -1,0 +1,98 @@
+* {
+    line-height: 1.5;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: justify;
+}
+
+ol, ul {
+    margin-left: 1.5em;
+}
+
+ul {
+    list-style: none;    
+}
+
+.cv {
+    display: flex;
+    justify-content: center;
+}
+
+.cv__card {
+    border-radius: 1.5rem;
+    display: grid;
+    opacity: 4;
+    padding: 4rem;
+    width: fit-content;
+}
+
+.cv__subtitle {
+    background-color: #22d5fd8c;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.icons {
+    margin: 0.5rem;
+}
+
+.icons-cv,
+.icons__link {
+    color: var(--theme-color);
+    margin-left: 0;
+}
+
+.menu__icons {
+    margin-top: 1rem;
+}
+
+.icons__link {
+    font-size: 30px;
+    margin: 1rem 0.5rem 1.5rem 0;
+    text-decoration: none;
+} 
+
+.icon-linkedin, .icon-github {
+    font-size: 32px; 
+}
+
+.experiences-list__nkey, 
+.experiences-list__mastersense, 
+.mastersense-level2__list, 
+.mastersense-level1__list, 
+.academic-education__list {
+    padding: 1rem;
+}
+
+.experiences-list__nkey, 
+.mastersense-level2__list, 
+.mastersense-level1__list, 
+.academic-education__list {
+    list-style-type: "-  ";
+}
+
+.extracurricular-courses__list {
+    list-style-type: disc;
+}
+
+
+@media screen and (min-width: 0) {
+    .cv__card {
+        margin: 2rem;
+        padding: 2rem;
+    }
+
+    .A4 {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cv__card {
+        margin: 4rem;
+    }
+
+    .A4 {
+        width: 50vw;
+    }
+}

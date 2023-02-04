@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import 'layout/home.css';
+@import 'layout/cv.css';
+@import 'layout/about.css';
+
+:root {
+    --bg-color: #000000;
+    --text-color: #F6F6F6;
+    --theme-color: #22D4FD;
+    --button-hover-color: #272727;
+
+    --font-title: 'Krona One', sans-serif;
+    --font-text: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+.header {
+    padding: 2% 0 0 15%;
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+}
+
+.menu__link,
+.footer {
+    font-family: var(--font-text);
+    font-size: 24px;
+}
+
+.menu__link {
+    color: var(--theme-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+    opacity: .7;
+}
+
+.portfolio {
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%;
+}
+
+.portfolio,
+.portfolio__info {
+    display: flex;
+}
+
+.portfolio__info {
+    flex-direction: column;
+    gap: 32px;
+    width: 615px;
+}
+
+.portfolio__title,
+.portfolio__subtitle {
+    font-family: var(--font-title);
+}
+
+.portfolio__title {
+    font-size: 36px;
+}
+
+.portfolio__title--highlight {
+    color: var(--theme-color);
+    font-weight: bold;
+}
+
+.portfolio__title,
+.portfolio__subtitle {
+    font-weight: 400;
+}
+
+.portfolio__subtitle,
+.portfolio__text {
+    font-size: 22px;
+}
+
+.portfolio__text {
+    font-family: var(--font-text);
+}
+
+.portfolio__img {
+    height: 440px;
+}
+
+.portfolio__img:hover {
+    opacity: 0.5;
+}
+
+.footer {
+    background-color: var(--theme-color);
+    color: var(--bg-color);
+    font-weight: 400;
+    padding: 24px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1924px) {
+    .portfolio__info {
+        gap: 40px;
+    }
+    
+    .portfolio__subtitle {
+        font-size: 24px;
+    }
+    
+    .portfolio__text {
+        font-size: 23px;
+    }
+}
