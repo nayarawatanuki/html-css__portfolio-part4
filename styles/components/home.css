@@ -1,0 +1,31 @@
+.presentation-info__buttons,
+.presentation-info__button {
+    align-items: center;
+}
+
+.presentation-info__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.presentation-info__button {
+    border: 2px solid var(--theme-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    display: flex;
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+    font-weight: 600;
+    gap: 16px;
+    justify-content: center;
+    padding: 21.5px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 65%;
+}
+
+.presentation-info__button:hover {
+    background-color: var(--button-hover-color);
+}

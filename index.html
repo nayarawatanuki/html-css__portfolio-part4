@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles/style.css">
-
-    <title>Portfolio</title>
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
     <header class="header">
         <nav class="menu">
-            <a href="index.html" class="menu__link">Home</a>
+            <a class="menu__link" href="index.html">Home</a>
             <a href="cv.html" class="menu__link">Currículo</a>
-            <a href="about.html" class="menu__link">Sobre mim</a>
+            <a class="menu__link" href="about.html">Sobre mim</a>
         </nav>
     </header>
     <main class="portfolio">
-        <section class="portfolio__info">
-            <h1 class="portfolio__title">
-                Eleve seu negócio digital a outro nível <strong class="portfolio__title--highlight">com um Front-end de qualidade!</strong>
-            </h1>
-            <p class="portfolio__text">
-                Olá! Sou Nayara Watanuki, desenvolvedora Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?
-            </p>
-
-            <div class="presentation-info__links">
+        <section class="portfolio__container portfolio__info">
+            <h1 class="portfolio__title">Eleve seu negócio digital a outro nível<strong 
+            class="portfolio__title--highlight"> com um Front-end de qualidade!
+            </strong></h1>
+            <p class="portfolio__text">Olá! Sou Nayara Watanuki, desenvolvedora
+            Front-end com especialidade em React, HTML e
+            CSS. Ajudo pequenos negócios e designers a
+            colocarem em prática boas ideias. Vamos
+            conversar?</p>
+            <div class="presentation-info__buttons">
                 <h2 class="portfolio__subtitle">Acesse minhas redes:</h2>
-                <a class="presentation-info__link" href="https://www.github.com/nayarawatanuki">
-                    <img src="img/icons/github.png" alt=""> GitHub
+                <a class="presentation-info__button" href="https://github.com/nayarawatanuki">
+                    <img src="./assets/img/icons/github.png">
+                    Github
                 </a>
-                <a class="presentation-info__link" href="https://www.linkedin.com/in/nayarawatanuki/">
-                    <img src="img/icons/linkedin.png" alt=""> Linkedin
+                <a class="presentation-info__button" href="https://linkedin.com/in/nayarawatanuki">
+                    <img src="./assets/img/icons/linkedin.png">
+                    linkedin
                 </a>
-                <a class="presentation-info__link" href="https://www.instagram.com/nayarawatanuki">
-                    <img src="img/icons/instagram.png" alt=""> Instagram
+                <a class="presentation-info__button" href="https://instagram.com/nayarawatanuki">
+                    <img src="./assets/img/icons/instagram.png">
+                    Instagram
                 </a>
             </div>
         </section>
-        <img class="portfolio__img" src="img/author.png" alt="Foto da Nayara Watanuki">
+        <section class="portfolio__container">
+            <img class="portfolio__img presentation__img" src="./assets/img/author.png" alt="Foto da Nayara Watanuki">
+        </section>
     </main>
     <footer class="footer">
         <p class="portfolio__text">Desenvolvido por Alura.</p>
     </footer>
 </body>
+
 </html>

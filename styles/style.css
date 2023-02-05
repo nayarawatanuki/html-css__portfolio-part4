@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
-@import 'layout/home.css';
-@import 'layout/cv.css';
-@import 'layout/about.css';
+@import 'components/home.css';
+@import 'components/cv.css';
 
 :root {
     --bg-color: #000000;
@@ -13,7 +12,7 @@
     --font-text: 'Montserrat', sans-serif;
 }
 
-* {
+*{
     margin: 0;
     padding: 0;
 }
@@ -24,19 +23,36 @@ body {
     color: var(--text-color);
 }
 
+ol, ul {
+    margin-left: 1.5em;
+}
+
+
 .header {
-    padding: 2% 0 0 15%;
+    padding: 2% 0% 0% 15%;
+}
+
+.menu,
+.portfolio,
+.portfolio__info,
+.portfolio__container {
+    display: flex;
 }
 
 .menu {
-    display: flex;
     gap: 80px;
 }
 
 .menu__link,
-.footer {
+.portfolio__text {
     font-family: var(--font-text);
-    font-size: 24px;
+}
+
+.menu__link,
+.portfolio__subtitle,
+.portfolio__text {
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .menu__link {
@@ -51,20 +67,20 @@ body {
 }
 
 .portfolio {
-    align-items: center;
+    align-items: flex-start;
+    gap: 82px;
     justify-content: space-between;
     padding: 5% 15%;
 }
 
-.portfolio,
-.portfolio__info {
-    display: flex;
+.portfolio__container {
+    justify-content: center;
+    width: 50%;
 }
 
 .portfolio__info {
     flex-direction: column;
-    gap: 32px;
-    width: 615px;
+    gap: 40px;
 }
 
 .portfolio__title,
@@ -73,30 +89,11 @@ body {
 }
 
 .portfolio__title {
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 .portfolio__title--highlight {
     color: var(--theme-color);
-    font-weight: bold;
-}
-
-.portfolio__title,
-.portfolio__subtitle {
-    font-weight: 400;
-}
-
-.portfolio__subtitle,
-.portfolio__text {
-    font-size: 22px;
-}
-
-.portfolio__text {
-    font-family: var(--font-text);
-}
-
-.portfolio__img {
-    height: 440px;
 }
 
 .portfolio__img:hover {
@@ -106,21 +103,26 @@ body {
 .footer {
     background-color: var(--theme-color);
     color: var(--bg-color);
-    font-weight: 400;
     padding: 24px;
     text-align: center;
 }
 
-@media screen and (min-width: 1924px) {
+@media (max-width: 1200px) {
+    .header {
+         padding: 10%;  
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .portfolio {
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
     .portfolio__info {
-        gap: 40px;
-    }
-    
-    .portfolio__subtitle {
-        font-size: 24px;
-    }
-    
-    .portfolio__text {
-        font-size: 23px;
+        width: auto;
     }
 }
